@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Projects</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Basic Projects</h1>
+            <nav class="nav-tabs">
+                <button class="tab-button active" data-tab="todo">Todo List</button>
+                <button class="tab-button" data-tab="github">GitHub Profile Finder</button>
+            </nav>
+        </header>
+
+        <main>
+            <div id="todo-app" class="tab-content active">
+                <!-- Todo content will be loaded here -->
+            </div>
+            <div id="github-app" class="tab-content">
+                <!-- GitHub content will be loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
