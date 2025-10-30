@@ -6,31 +6,41 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- TODO CONTAINER - Main wrapper for the todo application -->
     <div class="todo-container">
-    <h2>Myyy Todo Listt</h2>
-    
-    <div class="todo-input-section">
-        <input type="text" id="todoInput" placeholder="Enter a new task..." class="todo-input">
-        <button id="addTodoBtn" class="add-btn">Add Task</button>
+        <!-- HEADER - Application title -->
+        <h2>Myyy Todo Listt</h2>
+        
+        <!-- INPUT SECTION - Area for adding new tasks -->
+        <div class="todo-input-section">
+            <!-- TEXT INPUT - Field for entering new todo items -->
+            <input type="text" id="todoInput" placeholder="Enter a new task..." class="todo-input">
+            <!-- ADD BUTTON - Triggers creation of new todo -->
+            <button id="addTodoBtn" class="add-btn">Add Task</button>
+        </div>
+        
+        <!-- FILTER CONTROLS - Buttons to filter todo view -->
+        <div class="filters">
+            <!-- FILTER BUTTONS - Show different todo states -->
+            <!-- 'active' class shows which filter is currently selected -->
+            <!-- data-filter attributes used by JavaScript to determine filter type -->
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        
+        <!-- TODO LIST - Container where todo items will be displayed -->
+        <!-- This starts empty and gets populated dynamically by JavaScript -->
+        <ul id="todoList" class="todo-list">
+            <!-- Todos will be added here dynamically -->
+        </ul>
+        
+        <!-- STATISTICS SECTION - Shows counts of todos in different states -->
+        <div class="todo-stats">
+            <span>Total: <span id="totalCount">0</span></span>
+            <span>Pending: <span id="pendingCount">0</span></span>
+            <span>Completed: <span id="completedCount">0</span></span>
+        </div>
     </div>
-    
-    <div class="filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="pending">Pending</button>
-        <button class="filter-btn" data-filter="completed">Completed</button>
-    </div>
-    
-    <ul id="todoList" class="todo-list">
-        <!-- Todos will be added here dynamically -->
-    </ul>
-    
-    <div class="todo-stats">
-        <span>Total: <span id="totalCount">0</span></span>
-        <span>Pending: <span id="pendingCount">0</span></span>
-        <span>Completed: <span id="completedCount">0</span></span>
-    </div>
-</div>
-
-    
 </body>
 </html>
