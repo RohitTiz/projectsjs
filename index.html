@@ -18,18 +18,22 @@
             <!-- NAVIGATION TABS - Tabbed interface -->
             <nav class="nav-tabs">
                 <!-- TAB BUTTONS with data attributes for JavaScript targeting -->
-                <button class="tab-button active" data-tab="todo">Todo List</button>
-                <button class="tab-button" data-tab="github">GitHub Profile Finder</button>
+                <button class="tab-button " data-tab="todo">Todo List</button>
+                <button class="tab-button active" data-tab="github">GitHub Profile Finder</button>
+                <button class="tab-button " data-tab="weather">weather detector</button>
             </nav>
         </header>
 
         <main>
             <!-- TAB CONTENT AREAS -->
             <!-- 'active' class determines which tab is visible -->
-            <div id="todo-app" class="tab-content active">
+            <div id="todo-app" class="tab-content ">
                 <!-- Todo content will be loaded here -->
             </div>
-            <div id="github-app" class="tab-content">
+            <div id="github-app" class="tab-content active">
+                <!-- GitHub content will be loaded here -->
+            </div>
+            <div id="weather-app" class="tab-content ">
                 <!-- GitHub content will be loaded here -->
             </div>
         </main>
