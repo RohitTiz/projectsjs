@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Projects</title>
+    <!-- META TAGS - Define document metadata -->
+    <meta charset="UTF-8"> <!-- Character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Basic Projects</title> <!-- Browser tab title -->
+    
+    <!-- EXTERNAL CSS - Linking external stylesheet -->
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
+    <!-- MAIN CONTAINER - Wraps entire application -->
     <div class="container">
         <header>
             <h1>Basic Projects</h1>
+            
+            <!-- NAVIGATION TABS - Tabbed interface -->
             <nav class="nav-tabs">
+                <!-- TAB BUTTONS with data attributes for JavaScript targeting -->
                 <button class="tab-button active" data-tab="todo">Todo List</button>
                 <button class="tab-button" data-tab="github">GitHub Profile Finder</button>
             </nav>
         </header>
 
         <main>
+            <!-- TAB CONTENT AREAS -->
+            <!-- 'active' class determines which tab is visible -->
             <div id="todo-app" class="tab-content active">
                 <!-- Todo content will be loaded here -->
             </div>
@@ -26,6 +35,7 @@
         </main>
     </div>
 
+    <!-- EXTERNAL JAVASCRIPT - Module type for ES6 imports -->
     <script type="module" src="./src/main.js"></script>
 </body>
 </html>
