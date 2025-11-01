@@ -15,12 +15,7 @@ fetch('./src/components/githubProfile/githubProfile.html')
     });
 
 function initializeGitHubApp() {
-    const githubUsername = document.getElementById('githubUsername');
-    const searchBtn = document.getElementById('searchBtn');
-    const loading = document.getElementById('loading');
-    const error = document.getElementById('error');
-    const profile = document.getElementById('profile');
-
+    
     // Event Listeners
     searchBtn.addEventListener('click', searchGitHubProfile);
     githubUsername.addEventListener('keypress', (e) => {
